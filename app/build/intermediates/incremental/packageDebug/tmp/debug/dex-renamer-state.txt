@@ -1,4 +1,4 @@
-#Mon Jun 11 14:18:48 EDT 2018
+#Mon Jun 11 14:58:23 EDT 2018
 base.0=/Users/sbosse094/Box Sync/comcast_src/sample_mvp_rxjava/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

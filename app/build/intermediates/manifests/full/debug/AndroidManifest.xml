@@ -28,7 +28,8 @@
     <application
         android:debuggable="true"
         android:icon="@drawable/icon"
-        android:label="Feeder" >
+        android:label="Feeder"
+        android:testOnly="true" >
         <provider
             android:name="com.stoyanr.feeder.content.MainContentProvider"
             android:authorities="com.stoyanr.feeder.content" />
