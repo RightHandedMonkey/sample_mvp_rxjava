@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Mon Jun 11 09:24:40 EDT 2018
-0.baseType=DIRECTORY
-0.base=/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/transforms/dexMerger/androidTest/debug/0
-0.path=classes.dex
-0.set=DEX
-count=1

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "/Users/sbosse094/Box Sync/comcast_src/sample_mvp_rxjava/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/sbosse094/Box Sync/comcast_src/sample_mvp_rxjava/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "35,36,17,26,18,33,34,30,28,31,20,29,32,19,24,25,23,21,22,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

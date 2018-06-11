@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/sbosse094/Box Sync/comcast_src/sample_mvp_rxjava/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/sbosse094/Box Sync/comcast_src/sample_mvp_rxjava/app/src/debug/jniLibs"/></dataSet></merger>
