@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/menu_items_menu.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/menu/items_menu.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/layout_item_view.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/layout/item_view.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/drawable_feedicon.png.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/drawable/feedicon.png"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/menu_channels_menu.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/menu/channels_menu.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/menu_channels_context_menu.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/menu/channels_context_menu.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/drawable_icon.png.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/drawable/icon.png"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/layout_channel_view.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/layout/channel_view.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/layout_add_channel_activity.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/layout/add_channel_activity.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/layout_view_item_activity.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/layout/view_item_activity.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/drawable_btn_check_on.png.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/drawable/btn_check_on.png"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/drawable_ic_menu_refresh.png.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/drawable/ic_menu_refresh.png"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/layout_channels_activity.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/layout/channels_activity.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/xml_settings.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/xml/settings.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/menu_view_item_menu.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/menu/view_item_menu.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/layout_items_activity.xml.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/layout/items_activity.xml"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/drawable_ic_menu_clear_playlist.png.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/drawable/ic_menu_clear_playlist.png"
+    },
+    {
+        "merged": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/res/merged/debug/drawable_btn_check_off.png.flat",
+        "source": "/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/src/main/res/drawable/btn_check_off.png"
+    }
+]

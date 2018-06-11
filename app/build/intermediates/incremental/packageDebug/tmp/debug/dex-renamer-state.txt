@@ -1,0 +1,4 @@
+#Fri Jun 08 17:15:57 EDT 2018
+base.0=/Users/sbosse094/Box Sync/comcast_src/feeder-android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
