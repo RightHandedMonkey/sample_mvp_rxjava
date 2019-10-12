@@ -18,6 +18,7 @@ package com.stoyanr.feeder.activity;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -26,11 +27,12 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.stoyanr.feeder.R;
+import com.stoyanr.feeder.addChannel.AddChannelPresenter;
 import com.stoyanr.feeder.content.ContentManager;
 import com.stoyanr.feeder.sync.Synchronizer;
 import com.stoyanr.feeder.util.DialogUtils;
 
-public class AddChannelActivity extends Activity {
+public class AddChannelActivity extends Activity implements AddChannelPresenter.AddChannelInterface {
 
     private static final String TAG = "AddChannelActivity";
 
@@ -38,48 +40,53 @@ public class AddChannelActivity extends Activity {
     private EditText urlEditText;
     private Button addButton;
     private ProgressDialog progressDialog;
+    private AddChannelPresenter presenter;
 
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.add_channel_activity);
         handler = new Handler();
-        initControls();
+        presenter = new AddChannelPresenter(this);
+        presenter.init();
     }
     
     @Override
     public void onStop() {
         super.onStop();
-        dismissProgressDialog();
+        presenter.hideProgress();
     }
 
-    public void initControls() {
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.destroy();
+        presenter = null;
+    }
+
+    @Override
+    public void init() {
         urlEditText = (EditText) findViewById(R.id.urlEditText);
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addChannel();
+                String url = urlEditText.getText().toString();
+                Log.d(TAG, "Adding new channel with URL " + url);
+                presenter.addChannel(url);
             }
         });
     }
 
-    private void addChannel() {
-        String url = urlEditText.getText().toString();
-        Log.d(TAG, "Adding new channel with URL " + url);
-        showProgressDialog();
-        new Thread(new AddChannelRunnable(url)).start();
-    }
-
-    private void showProgressDialog() {
-        // @formatter:off
+    @Override
+    public void showProgress() {
         progressDialog = ProgressDialog.show(AddChannelActivity.this,
             getResources().getText(R.string.please_wait), 
             getResources().getText(R.string.reading_feed), true, false);
-        // @formatter:on
     }
-    
-    private void dismissProgressDialog() {
+
+    @Override
+    public void hideProgress() {
         if (progressDialog != null) {
             progressDialog.dismiss();
         }
@@ -90,7 +97,27 @@ public class AddChannelActivity extends Activity {
         getIntent().setData(ContentManager.getChannelUri(id));
         setResult(RESULT_OK, getIntent());
     }
-    
+
+    @Override
+    public Context getContext() {
+        return getApplicationContext();
+    }
+
+    @Override
+    public void addChannelSuccess(long id) {
+        presenter.hideProgress();
+        setResult(id);
+        finish();
+    }
+
+    @Override
+    public void addChannelFailure(String msg) {
+        presenter.hideProgress();
+        DialogUtils.showErrorDialog(AddChannelActivity.this, msg);
+
+    }
+
+
     private class AddChannelRunnable implements Runnable {
         private final String url;
 
@@ -118,7 +145,7 @@ public class AddChannelActivity extends Activity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    dismissProgressDialog();
+                    presenter.hideProgress();
                     setResult(id);
                     finish();
                 }
@@ -129,11 +156,12 @@ public class AddChannelActivity extends Activity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    dismissProgressDialog();
+                    presenter.hideProgress();
                     DialogUtils.showErrorDialog(AddChannelActivity.this, msg);
                 }
             });
         }
     }
+
 
 }
